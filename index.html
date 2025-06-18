@@ -311,6 +311,49 @@
     font-size: 1rem;
     color: #ccc;
   }
+
+  /* Estilo nuevo pie de pÃ¡gina y iconos sociales */
+  footer {
+    background-color: #1a1b2f; /* mantiene el color oscuro del diseÃ±o */
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #777;
+  }
+
+  #social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Espacio entre iconos */
+    opacity: 0;
+    animation: fadeInUp 1.5s ease-out forwards;
+    margin-top: 10px;
+  }
+
+  .social-icon {
+    font-size: 2.5rem;
+    color: #ff4d4d; /* Rojo vibrante para que combine con el tema */
+    transition: all 0.4s ease;
+    text-decoration: none;
+  }
+
+  .social-icon:hover {
+    transform: scale(1.5);
+    color: #00fff7; /* Aqua brillante */
+    text-shadow: 0 0 10px #00fff7, 0 0 20px #00fff7;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 </style>
 </head>
 <body>
@@ -319,17 +362,16 @@
     <img src="https://i.imgur.com/OndkJYN.png" alt="Logo" style="height:50px;"> <!-- Logo en la izquierda -->
   </div>
   <div class="header-right">
-    <button><i class="fas fa-home"></i> Home</button
-    
+    <button><i class="fas fa-home"></i> Home</button>
     <!-- BotÃ³n modo oscuro/claro -->
-    <button id="modoBtn" aria-label="Cambiar modo">Modo Oscuro</button>
+    <button id="modoBtn" aria-label="Cambiar modo">ðŸŒ™</button>
   </div>
 </header>
 
 <!-- Texto en medio en lado izquierdo -->
 <div id="middle-text">
   <h3>Economy Token Power</h3>
-  <p>Hecho en Venezuela</p>
+  <p>Unlock freedom with decentralized finance.</p>
 </div>
 
 <div class="main">
@@ -361,29 +403,29 @@
       <div class="logos-track">
         <!-- Logos en movimiento -->
         <div class="logo-item">
-          <img src="https://cryptologos.cc/logos/tether-usdt-logo.png" alt="Tether" title="Tether"/>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Tether_Logo.svg/2560px-Tether_Logo.svg.png" alt="Tether" title="Tether"/>
         </div>
         <div class="logo-item">
-          <img src="https://cryptologos.cc/logos/uniswap-uni-logo.png" alt="Uniswap Labs" title="Uniswap Labs"/>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Uniswap_Logo_and_Wordmark.svg/2560px-Uniswap_Logo_and_Wordmark.svg.png" alt="Uniswap Labs" title="Uniswap Labs"/>
         </div>
         <div class="logo-item">
-          <img src="https://cryptologos.cc/logos/arbitrum-arb-logo.png" alt="Arbitrum" title="Arbitrum"/>
+          <img src="https://i.namu.wiki/i/uMOKzu70SLBB-yRqK8pLLxZAvGmBpRqqlVIyirBjmueG83seeAk7PVq42UJvOxXyk5lJRuKJhm2-2aURu1ARe6P3P4rDv8fbZedZ2wxlqAA5zHCAVf-in4WmovgIjTpIsN6lbx2WQY-5qec6KHxY1lgxZM-b2nDY5YXFwRfXFrg.webp" alt="Arbitrum" title="Arbitrum"/>
         </div>
         <div class="logo-item">
-          <img src="https://cryptologos.cc/logos/bitcoin-btc-logo.png" alt="Bitcoin" title="Bitcoin"/>
+          <img src="https://altcoinsbox.com/wp-content/uploads/2023/03/full-trust-wallet-logo.webp" alt="Bitcoin" title="Bitcoin"/>
         </div>
         <!-- Logos repetidos para deslizar -->
         <div class="logo-item">
-          <img src="https://cryptologos.cc/logos/tether-usdt-logo.png" alt="Tether" title="Tether"/>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Tether_Logo.svg/2560px-Tether_Logo.svg.png" alt="Tether" title="Tether"/>
         </div>
         <div class="logo-item">
-          <img src="https://cryptologos.cc/logos/uniswap-uni-logo.png" alt="Uniswap Labs" title="Uniswap Labs"/>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Uniswap_Logo_and_Wordmark.svg/2560px-Uniswap_Logo_and_Wordmark.svg.png" alt="Uniswap Labs" title="Uniswap Labs"/>
         </div>
         <div class="logo-item">
-          <img src="https://cryptologos.cc/logos/arbitrum-arb-logo.png" alt="Arbitrum" title="Arbitrum"/>
+          <img src="https://i.namu.wiki/i/uMOKzu70SLBB-yRqK8pLLxZAvGmBpRqqlVIyirBjmueG83seeAk7PVq42UJvOxXyk5lJRuKJhm2-2aURu1ARe6P3P4rDv8fbZedZ2wxlqAA5zHCAVf-in4WmovgIjTpIsN6lbx2WQY-5qec6KHxY1lgxZM-b2nDY5YXFwRfXFrg.webp" alt="Arbitrum" title="Arbitrum"/>
         </div>
         <div class="logo-item">
-          <img src="https://cryptologos.cc/logos/bitcoin-btc-logo.png" alt="Bitcoin" title="Bitcoin"/>
+          <img src="https://altcoinsbox.com/wp-content/uploads/2023/03/full-trust-wallet-logo.webp" alt="Bitcoin" title="Bitcoin"/>
         </div>
       </div>
     </div>
@@ -391,7 +433,7 @@
     <div id="ethereum-info">
       <div id="ethereum-header">
         <img src="https://i.imgur.com/OndkJYN.png" alt="Ethereum Logo" />
-        <div id="ethereum-name">Ves Digital(VED)</div>
+        <div id="ethereum-name">VES Digital(VED)</div>
       </div>
       <div id="ethereum-address-container">
         <div id="ethereum-address" title="DirecciÃ³n del contrato Ethereum">
@@ -405,10 +447,34 @@
   </div>
 </div>
 
-<!-- Pie de pÃ¡gina -->
-<footer>
-  Â© 2024 VES Digital. Todos los derechos reservados.
-</footer>
+  <!-- Pie de pÃ¡gina con redes sociales -->
+  <footer>
+    <p>Â© 2025 VES Digital. All rights reserved.</p>
+    <div id="social-icons">
+      <!-- Facebook -->
+      <a href="https://facebook.com/tu-perfil" target="_blank" aria-label="Facebook" class="social-icon">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <!-- Twitter --> 
+      <a href="https://twitter.com/vesdigital0x" target="_blank" class="social-icon" aria-label="Twitter">
+  <img src="https://pbs.twimg.com/profile_images/1683509557429936128/CyRdcvGJ_400x400.jpg" alt="Twitter" style="width: 24px; height: 24px;">
+</a>
+      <!-- Telegram -->
+      <a href="https://t.me/vesdigital0x" target="_blank" class="social-icon" aria-label="Telegram">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Telegram_2019_Logo.svg/2048px-Telegram_2019_Logo.svg.png" alt="Telegram" style="width: 24px; height: 24px;">
+</a>
+      <!-- Instagram -->
+      <a href="https://instagram.com/tu-perfil" target="_blank" aria-label="Instagram" class="social-icon">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <!-- LinkedIn -->
+      <a href="https://linkedin.com/in/tu-perfil" target="_blank" aria-label="LinkedIn" class="social-icon">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </div>
+  </footer>
+</body>
+</html>
 
 <!-- Scripts -->
 <script>
@@ -436,9 +502,9 @@
     document.body.classList.toggle('claro');
     // Cambiar texto del botÃ³n segÃºn modo
     if(document.body.classList.contains('claro')){
-      modoBtn.textContent = 'Modo Oscuro';
+      modoBtn.textContent = 'ðŸŒ™';
     }else{
-      modoBtn.textContent = 'Modo Claro';
+      modoBtn.textContent = 'â˜€ï¸';
     }
   });
 
