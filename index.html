@@ -437,7 +437,7 @@
       </div>
       <div id="ethereum-address-container">
         <div id="ethereum-address" title="DirecciÃ³n del contrato Ethereum">
-          0x290955ca2dDb67Af4f871Ddb97591E45aA3aAa54
+          0x783Dcb3e36041DA7D030460CbbcBbb01E2dF05fD
         </div>
         <button id="copyBtn" aria-label="Copiar direcciÃ³n">
           <i class="fas fa-copy"></i>
@@ -449,7 +449,7 @@
 
   <!-- Pie de pÃ¡gina con redes sociales -->
   <footer>
-    <p>Â© 2025 VES Digital. All rights reserved.</p>
+    <p>© 2025 VES Digital. All rights reserved.</p>
     <div id="social-icons">
       <!-- Facebook -->
       <a href="https://facebook.com/tu-perfil" target="_blank" aria-label="Facebook" class="social-icon">
@@ -515,10 +515,10 @@
   copyBtn.addEventListener('click', () => {
     navigator.clipboard.writeText(ethereumAddress.innerText)
       .then(() => {
-        alert('DirecciÃ³n copiada al portapapeles');
+        alert('Address copied to clipboard');
       })
       .catch(() => {
-        alert('Error al copiar la direcciÃ³n');
+        alert('Error copying address');
       });
   });
 </script>
